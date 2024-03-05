@@ -1,0 +1,88 @@
+@import "_colores";
+
+$colores:( colorBody:$colorBody,colorHeader:$colorHeader,colorTitulo:$colorTitulo);
+
+@mixin titulos {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+body{
+    background: map-get($map: $colores, $key:colorBody);
+    header{
+        background-color: map-get($map: $colores, $key:colorHeader) ;
+    }
+    div{
+        h2{
+            @include titulos;
+            color:$colorTitulo;
+        }
+    }
+    main{
+        section{
+            div{
+                div{
+                    h1{
+                        @include titulos;
+                        color:$colorTitulo;
+                    }
+                }
+            }
+        }
+    }
+    div{
+        h2{
+            @include titulos;
+            color:$colorTitulo;
+        }
+    }
+}
+
+.text-center text-white{
+    @include titulos;
+    color: $colorTitulo;
+}
+
+.container{
+    h2{
+        @include titulos;
+        color:$colorTitulo;
+    }
+}
+
+.boton{
+    width: 100px;
+    height: 50px;
+    font-size:15px;
+    background-color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.boton--detalles{
+    @extend .boton;
+    background-color: lightseagreen;
+}
+
+.boton--comprar{
+    @extend .boton;
+    background-color: green;
+}
+
+
+
+.myForm{
+    max-width: 25em;
+    padding: 1.3em;
+    margin: 0 auto;
+    background-color: rgbas(120,119,123, 0.3);
+    font-weight: bold;
+    border-radius: 0.5em;
+    box-shadow: inset 1px 1px 22px 4px rgba(0,0,0,0.85);
+} 

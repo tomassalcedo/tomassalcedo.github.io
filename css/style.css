@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(to bottom, #1a1515, white);
+}
+
+body header {
+  background-color: #610202;
+}
+
+body div h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+body main section div div h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+body div h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.text-center text-white {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.container h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.boton, .boton--detalles, .boton--comprar {
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  background-color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.boton--detalles {
+  background-color: lightseagreen;
+}
+
+.boton--comprar {
+  background-color: green;
+}
+
+.myForm {
+  max-width: 25em;
+  padding: 1.3em;
+  margin: 0 auto;
+  background-color: rgbas(120, 119, 123, 0.3);
+  font-weight: bold;
+  border-radius: 0.5em;
+  box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+}
